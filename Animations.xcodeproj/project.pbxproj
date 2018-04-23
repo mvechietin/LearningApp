@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3060A9BA248BB41577268F45 /* Pods_Animations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BB69743883ADBD5AB8829A /* Pods_Animations.framework */; };
+		EF2E1DEC2088F89D00F0F691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E1DEB2088F89D00F0F691 /* AppDelegate.swift */; };
+		EF2E1DEE2088F89D00F0F691 /* ChainAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E1DED2088F89D00F0F691 /* ChainAnimationViewController.swift */; };
+		EF2E1DF12088F89D00F0F691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E1DEF2088F89D00F0F691 /* Main.storyboard */; };
+		EF2E1DF32088F89D00F0F691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2E1DF22088F89D00F0F691 /* Assets.xcassets */; };
+		EF2E1DF62088F89D00F0F691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E1DF42088F89D00F0F691 /* LaunchScreen.storyboard */; };
+		EF2E1E0020890F8000F0F691 /* AnimationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E1DFF20890F8000F0F691 /* AnimationListViewController.swift */; };
+		EF2E1E02208915CF00F0F691 /* PulseAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E1E01208915CF00F0F691 /* PulseAnimationViewController.swift */; };
+		EF2E1E04208A042400F0F691 /* CircleAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E1E03208A042300F0F691 /* CircleAnimationViewController.swift */; };
+		EF2E1E06208A18C200F0F691 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E1E05208A18C200F0F691 /* ColorExtension.swift */; };
+		EF2E1E0B208A293E00F0F691 /* TableViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E1E0A208A293E00F0F691 /* TableViewAnimationViewController.swift */; };
+		EF65C046208D009B00913F1B /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C045208D009B00913F1B /* ButtonAnimation.swift */; };
+		EF65C048208D01A600913F1B /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF65C047208D01A600913F1B /* List.storyboard */; };
+		EF65C04B208D2D4100913F1B /* GeneralListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C04A208D2D4100913F1B /* GeneralListViewController.swift */; };
+		EF65C04D208D2E5900913F1B /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF65C04C208D2E5900913F1B /* Rest.storyboard */; };
+		EF65C053208D358F00913F1B /* RestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C052208D358F00913F1B /* RestViewController.swift */; };
+		EF65C055208D378000913F1B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C054208D378000913F1B /* APIService.swift */; };
+		EF65C058208D41C800913F1B /* Rest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF65C056208D41C800913F1B /* Rest.xcdatamodeld */; };
+		EF65C05E208D439200913F1B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C05D208D439200913F1B /* CoreDataStack.swift */; };
+		EF65C061208D453400913F1B /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C05F208D453400913F1B /* Photo+CoreDataClass.swift */; };
+		EF65C062208D453400913F1B /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C060208D453400913F1B /* Photo+CoreDataProperties.swift */; };
+		EF65C065208D49EE00913F1B /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C064208D49EE00913F1B /* PhotoCell.swift */; };
+		EF65C067208D4B8500913F1B /* UIImageView+CacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C066208D4B8500913F1B /* UIImageView+CacheImage.swift */; };
+		EF65C069208D523F00913F1B /* CustomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C068208D523F00913F1B /* CustomListCell.swift */; };
+		EF65C06D208DEE3E00913F1B /* AnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF65C06C208DEE3E00913F1B /* AnimationCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2216EAE81ECC69C380896A96 /* Pods-Animations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Animations/Pods-Animations.debug.xcconfig"; sourceTree = "<group>"; };
+		B2245BF302702FFFF2C8C9EE /* Pods-Animations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations.release.xcconfig"; path = "Pods/Target Support Files/Pods-Animations/Pods-Animations.release.xcconfig"; sourceTree = "<group>"; };
+		C1BB69743883ADBD5AB8829A /* Pods_Animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2E1DE82088F89D00F0F691 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2E1DEB2088F89D00F0F691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF2E1DED2088F89D00F0F691 /* ChainAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainAnimationViewController.swift; sourceTree = "<group>"; };
+		EF2E1DF02088F89D00F0F691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF2E1DF22088F89D00F0F691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF2E1DF52088F89D00F0F691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF2E1DF72088F89D00F0F691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF2E1DFF20890F8000F0F691 /* AnimationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationListViewController.swift; sourceTree = "<group>"; };
+		EF2E1E01208915CF00F0F691 /* PulseAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimationViewController.swift; sourceTree = "<group>"; };
+		EF2E1E03208A042300F0F691 /* CircleAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimationViewController.swift; sourceTree = "<group>"; };
+		EF2E1E05208A18C200F0F691 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		EF2E1E0A208A293E00F0F691 /* TableViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAnimationViewController.swift; sourceTree = "<group>"; };
+		EF65C045208D009B00913F1B /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
+		EF65C047208D01A600913F1B /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		EF65C04A208D2D4100913F1B /* GeneralListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralListViewController.swift; sourceTree = "<group>"; };
+		EF65C04C208D2E5900913F1B /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
+		EF65C052208D358F00913F1B /* RestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestViewController.swift; sourceTree = "<group>"; };
+		EF65C054208D378000913F1B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EF65C057208D41C800913F1B /* Rest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rest.xcdatamodel; sourceTree = "<group>"; };
+		EF65C05D208D439200913F1B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		EF65C05F208D453400913F1B /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EF65C060208D453400913F1B /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EF65C064208D49EE00913F1B /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		EF65C066208D4B8500913F1B /* UIImageView+CacheImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+CacheImage.swift"; sourceTree = "<group>"; };
+		EF65C068208D523F00913F1B /* CustomListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListCell.swift; sourceTree = "<group>"; };
+		EF65C06C208DEE3E00913F1B /* AnimationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF2E1DE52088F89D00F0F691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3060A9BA248BB41577268F45 /* Pods_Animations.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D54F45094DA4B4DF6F07810 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2216EAE81ECC69C380896A96 /* Pods-Animations.debug.xcconfig */,
+				B2245BF302702FFFF2C8C9EE /* Pods-Animations.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9C1E811F8D3C6CBE20E9ADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1BB69743883ADBD5AB8829A /* Pods_Animations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF2E1DDF2088F89D00F0F691 = {
+			isa = PBXGroup;
+			children = (
+				EF2E1DEA2088F89D00F0F691 /* Animations */,
+				EF2E1DE92088F89D00F0F691 /* Products */,
+				1D54F45094DA4B4DF6F07810 /* Pods */,
+				D9C1E811F8D3C6CBE20E9ADD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF2E1DE92088F89D00F0F691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E1DE82088F89D00F0F691 /* Animations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF2E1DEA2088F89D00F0F691 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E1E09208A26B900F0F691 /* Resources */,
+				EF2E1E08208A26AD00F0F691 /* Extensions */,
+				EF2E1E07208A269C00F0F691 /* Controllers */,
+				EF2E1DEB2088F89D00F0F691 /* AppDelegate.swift */,
+				EF65C054208D378000913F1B /* APIService.swift */,
+				EF2E1DF22088F89D00F0F691 /* Assets.xcassets */,
+				EF2E1DF72088F89D00F0F691 /* Info.plist */,
+				EF65C056208D41C800913F1B /* Rest.xcdatamodeld */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		EF2E1E07208A269C00F0F691 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF65C04F208D31C300913F1B /* Rest Storyboard Classes */,
+				EF65C04E208D31A700913F1B /* Animations Storyboard Classes */,
+				EF65C049208D2D2800913F1B /* List Storyboard Classes */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF2E1E08208A26AD00F0F691 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E1E05208A18C200F0F691 /* ColorExtension.swift */,
+				EF65C066208D4B8500913F1B /* UIImageView+CacheImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF2E1E09208A26B900F0F691 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E1DF42088F89D00F0F691 /* LaunchScreen.storyboard */,
+				EF2E1DEF2088F89D00F0F691 /* Main.storyboard */,
+				EF65C047208D01A600913F1B /* List.storyboard */,
+				EF65C04C208D2E5900913F1B /* Rest.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF65C049208D2D2800913F1B /* List Storyboard Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF65C04A208D2D4100913F1B /* GeneralListViewController.swift */,
+				EF65C068208D523F00913F1B /* CustomListCell.swift */,
+			);
+			path = "List Storyboard Classes";
+			sourceTree = "<group>";
+		};
+		EF65C04E208D31A700913F1B /* Animations Storyboard Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E1DFF20890F8000F0F691 /* AnimationListViewController.swift */,
+				EF2E1DED2088F89D00F0F691 /* ChainAnimationViewController.swift */,
+				EF2E1E01208915CF00F0F691 /* PulseAnimationViewController.swift */,
+				EF2E1E03208A042300F0F691 /* CircleAnimationViewController.swift */,
+				EF2E1E0A208A293E00F0F691 /* TableViewAnimationViewController.swift */,
+				EF65C045208D009B00913F1B /* ButtonAnimation.swift */,
+				EF65C06C208DEE3E00913F1B /* AnimationCell.swift */,
+			);
+			path = "Animations Storyboard Classes";
+			sourceTree = "<group>";
+		};
+		EF65C04F208D31C300913F1B /* Rest Storyboard Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF65C063208D48BD00913F1B /* CoreData Classes */,
+				EF65C052208D358F00913F1B /* RestViewController.swift */,
+				EF65C064208D49EE00913F1B /* PhotoCell.swift */,
+			);
+			path = "Rest Storyboard Classes";
+			sourceTree = "<group>";
+		};
+		EF65C063208D48BD00913F1B /* CoreData Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF65C05D208D439200913F1B /* CoreDataStack.swift */,
+				EF65C05F208D453400913F1B /* Photo+CoreDataClass.swift */,
+				EF65C060208D453400913F1B /* Photo+CoreDataProperties.swift */,
+			);
+			path = "CoreData Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF2E1DE72088F89D00F0F691 /* Animations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF2E1DFA2088F89D00F0F691 /* Build configuration list for PBXNativeTarget "Animations" */;
+			buildPhases = (
+				90FB309229A3D0D7AACF8533 /* [CP] Check Pods Manifest.lock */,
+				EF2E1DE42088F89D00F0F691 /* Sources */,
+				EF2E1DE52088F89D00F0F691 /* Frameworks */,
+				EF2E1DE62088F89D00F0F691 /* Resources */,
+				D87E0505540DEBA1CEFC2E3B /* [CP] Embed Pods Frameworks */,
+				173A914BC2B8C49652DC6AFF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Animations;
+			productName = Animations;
+			productReference = EF2E1DE82088F89D00F0F691 /* Animations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF2E1DE02088F89D00F0F691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Matheus Gustavo dos Santos Vechietin";
+				TargetAttributes = {
+					EF2E1DE72088F89D00F0F691 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF2E1DE32088F89D00F0F691 /* Build configuration list for PBXProject "Animations" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF2E1DDF2088F89D00F0F691;
+			productRefGroup = EF2E1DE92088F89D00F0F691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF2E1DE72088F89D00F0F691 /* Animations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF2E1DE62088F89D00F0F691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2E1DF62088F89D00F0F691 /* LaunchScreen.storyboard in Resources */,
+				EF2E1DF32088F89D00F0F691 /* Assets.xcassets in Resources */,
+				EF65C048208D01A600913F1B /* List.storyboard in Resources */,
+				EF2E1DF12088F89D00F0F691 /* Main.storyboard in Resources */,
+				EF65C04D208D2E5900913F1B /* Rest.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		173A914BC2B8C49652DC6AFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Animations/Pods-Animations-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90FB309229A3D0D7AACF8533 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Animations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D87E0505540DEBA1CEFC2E3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Animations/Pods-Animations-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Animations/Pods-Animations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF2E1DE42088F89D00F0F691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF65C06D208DEE3E00913F1B /* AnimationCell.swift in Sources */,
+				EF2E1DEE2088F89D00F0F691 /* ChainAnimationViewController.swift in Sources */,
+				EF2E1E02208915CF00F0F691 /* PulseAnimationViewController.swift in Sources */,
+				EF65C053208D358F00913F1B /* RestViewController.swift in Sources */,
+				EF65C062208D453400913F1B /* Photo+CoreDataProperties.swift in Sources */,
+				EF65C067208D4B8500913F1B /* UIImageView+CacheImage.swift in Sources */,
+				EF65C065208D49EE00913F1B /* PhotoCell.swift in Sources */,
+				EF65C058208D41C800913F1B /* Rest.xcdatamodeld in Sources */,
+				EF2E1E0020890F8000F0F691 /* AnimationListViewController.swift in Sources */,
+				EF65C055208D378000913F1B /* APIService.swift in Sources */,
+				EF65C05E208D439200913F1B /* CoreDataStack.swift in Sources */,
+				EF2E1E06208A18C200F0F691 /* ColorExtension.swift in Sources */,
+				EF65C061208D453400913F1B /* Photo+CoreDataClass.swift in Sources */,
+				EF65C04B208D2D4100913F1B /* GeneralListViewController.swift in Sources */,
+				EF65C046208D009B00913F1B /* ButtonAnimation.swift in Sources */,
+				EF65C069208D523F00913F1B /* CustomListCell.swift in Sources */,
+				EF2E1DEC2088F89D00F0F691 /* AppDelegate.swift in Sources */,
+				EF2E1E04208A042400F0F691 /* CircleAnimationViewController.swift in Sources */,
+				EF2E1E0B208A293E00F0F691 /* TableViewAnimationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF2E1DEF2088F89D00F0F691 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF2E1DF02088F89D00F0F691 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF2E1DF42088F89D00F0F691 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF2E1DF52088F89D00F0F691 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF2E1DF82088F89D00F0F691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF2E1DF92088F89D00F0F691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF2E1DFB2088F89D00F0F691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2216EAE81ECC69C380896A96 /* Pods-Animations.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Animations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Animations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF2E1DFC2088F89D00F0F691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2245BF302702FFFF2C8C9EE /* Pods-Animations.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Animations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Animations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF2E1DE32088F89D00F0F691 /* Build configuration list for PBXProject "Animations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2E1DF82088F89D00F0F691 /* Debug */,
+				EF2E1DF92088F89D00F0F691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF2E1DFA2088F89D00F0F691 /* Build configuration list for PBXNativeTarget "Animations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2E1DFB2088F89D00F0F691 /* Debug */,
+				EF2E1DFC2088F89D00F0F691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF65C056208D41C800913F1B /* Rest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF65C057208D41C800913F1B /* Rest.xcdatamodel */,
+			);
+			currentVersion = EF65C057208D41C800913F1B /* Rest.xcdatamodel */;
+			path = Rest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF2E1DE02088F89D00F0F691 /* Project object */;
+}

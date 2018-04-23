@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UnE-mJ-sFY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="48u-Ae-cJx">
+            <objects>
+                <navigationController id="UnE-mJ-sFY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2dx-rX-bIl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YMr-b9-DSR" kind="relationship" relationship="rootViewController" id="Bh4-08-b6h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yhV-iK-umg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1025" y="116"/>
+        </scene>
+        <!--Fotos do Flickr-->
+        <scene sceneID="71b-dT-kFN">
+            <objects>
+                <viewController id="YMr-b9-DSR" customClass="RestViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VnY-FL-MJz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2hB-1I-VT7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" id="vkR-Sw-gNS" customClass="PhotoCell" customModule="Animations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vkR-Sw-gNS" id="0CM-NG-7Kf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YMr-b9-DSR" id="aoZ-SY-Vq4"/>
+                                    <outlet property="delegate" destination="YMr-b9-DSR" id="doK-Fi-tHa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J6v-Hy-uhU" firstAttribute="trailing" secondItem="2hB-1I-VT7" secondAttribute="trailing" id="2cn-5f-16O"/>
+                            <constraint firstItem="2hB-1I-VT7" firstAttribute="top" secondItem="J6v-Hy-uhU" secondAttribute="top" id="pEV-Ig-QER"/>
+                            <constraint firstItem="J6v-Hy-uhU" firstAttribute="bottom" secondItem="2hB-1I-VT7" secondAttribute="bottom" id="sMP-T9-JKs"/>
+                            <constraint firstItem="2hB-1I-VT7" firstAttribute="leading" secondItem="J6v-Hy-uhU" secondAttribute="leading" id="tVI-5z-bvC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J6v-Hy-uhU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fotos do Flickr" id="SQY-C9-GAT">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="SqP-AD-Ddx">
+                            <color key="tintColor" red="0.1333333333" green="0.32549019610000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="closeRest" destination="YMr-b9-DSR" id="wBr-C9-N39"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="2hB-1I-VT7" id="PgT-bc-6ph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5h-sZ-4YO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="116"/>
+        </scene>
+    </scenes>
+</document>
